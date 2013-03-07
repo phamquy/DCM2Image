@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DCMTKApp - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\QUYPS\LOCALS~1\Temp\RSP8DD.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/DCMTKApp.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Projects\DICOMConverter\Source\DCMTKAppDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\QUYPS\LOCALS~1\Temp\RSP8DD.tmp" 
+Creating temporary file "C:\DOCUME~1\QUYPS\LOCALS~1\Temp\RSP8DE.tmp" with contents
+[
+gdiplus.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/DCMTKApp.pdb" /debug /machine:I386 /out:"Debug/DCMTKApp.exe" /pdbtype:sept 
+.\Debug\DataElement.obj
+.\Debug\DCMTKApp.obj
+.\Debug\DCMTKAppDlg.obj
+.\Debug\DEFactory.obj
+.\Debug\StdAfx.obj
+.\Debug\DCMTKApp.res
+]
+Creating command line "link.exe @C:\DOCUME~1\QUYPS\LOCALS~1\Temp\RSP8DE.tmp"
+<h3>Output Window</h3>
+Compiling...
+DCMTKAppDlg.cpp
+D:\Projects\DICOMConverter\Source\DCMTKAppDlg.cpp(774) : warning C4018: '<' : signed/unsigned mismatch
+D:\Projects\DICOMConverter\Source\DCMTKAppDlg.cpp(957) : error C2039: 'GetHistogramSize' : is not a member of 'Bitmap'
+        c:\program files\microsoft platform sdk\include\gdiplusheaders.h(488) : see declaration of 'Bitmap'
+D:\Projects\DICOMConverter\Source\DCMTKAppDlg.cpp(957) : error C2065: 'HistogramFormatRGB' : undeclared identifier
+D:\Projects\DICOMConverter\Source\DCMTKAppDlg.cpp(963) : error C2039: 'GetHistogram' : is not a member of 'Bitmap'
+        c:\program files\microsoft platform sdk\include\gdiplusheaders.h(488) : see declaration of 'Bitmap'
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+DCMTKApp.exe - 3 error(s), 1 warning(s)
+</pre>
+</body>
+</html>
